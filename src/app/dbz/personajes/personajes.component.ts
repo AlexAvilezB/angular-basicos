@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { Personaje } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
 @Component({
@@ -8,7 +7,7 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './personajes.component.html',
   styleUrls: ['./personajes.component.css']
 })
-export class PersonajesComponent implements OnInit {
+export class PersonajesComponent {
 
   constructor( private dbzService: DbzService) { }
 
